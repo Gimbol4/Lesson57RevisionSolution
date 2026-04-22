@@ -8,19 +8,19 @@
 #include "logic.h"
 
 int sum_main_and_second_diagonales_elements(int matrix[DEFAULT_SIZE][DEFAULT_SIZE], int n) {
-	if (n < 1) {
-		return -1;
-	}
-	int sum = 0;
-	for (int i = 0; i < n; i++)
-	{
-		sum += matrix[i][i];
-	}
+    if (n < 1) {
+        return -1;
+    }
+    
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        sum += matrix[i][i];
+        sum += matrix[i][n - 1 - i];
+    }
 
-	for (int i = n; i > 0; i++)
-	{
-		sum += matrix[i][i];
-	}
+    if (n % 2 != 0) {
+        sum -= matrix[n / 2][n / 2];
+    }
 
-	return sum;
+    return sum;
 }
