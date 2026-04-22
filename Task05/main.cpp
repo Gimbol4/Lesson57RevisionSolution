@@ -11,9 +11,13 @@ int main() {
 	{
 		for (int j = 0; j < m; j++)
 		{
-			matrix[i][j] = rand() % 10;
+			matrix[i][j] = rand() % 50;
+			cout << matrix[i][j] << " ";
 		}
+		cout << "\n";
 	}
+
 	cout << get_last_local_maximum(matrix, n, m);
+
 	return 0;
 }
