@@ -4,4 +4,4 @@
 
 using namespace std;
 
-string get_all_local_maximums(int matrix[DEFAUL_SIZE][DEFAUL_SIZE], int n, int m);
+string get_last_local_maximum(int matrix[DEFAUL_SIZE][DEFAUL_SIZE], int n, int m);
