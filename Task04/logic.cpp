@@ -7,6 +7,7 @@
 // которые содержат хотя бы один экстремальный элемент.
 #include "logic.h"
 
+//cpu O(N^2)
 int sum_elements_of_columns_with_extreme_value(int matrix[DEFAUL_SIZE][DEFAUL_SIZE], int n, int m) {
 	if (n < 1 || m < 1) {
 		return -1;

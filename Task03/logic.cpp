@@ -7,6 +7,7 @@
 // чем всех остальных (отрицательных и нулевых).
 #include "logic.h"
 
+//cpu O(N^2)
 int count_rows_with_more_positive_values(int matrix[DEFAULT_SIZE][DEFAULT_SIZE], int n, int m) {
 	if (n < 1 || m < 1) {
 		return -1;

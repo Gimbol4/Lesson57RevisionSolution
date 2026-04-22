@@ -53,7 +53,7 @@ void test04() {
 // matrix with one element 
 void test06() {
 	int n = 1, m = 1;
-	string expected = "1";
+	string expected = "1 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{ {1} };
 
@@ -63,7 +63,7 @@ void test06() {
 // matrix == horizontal vector with one local minimum
 void test07() {
 	int n = 1, m = 3;
-	string expected = "1";
+	string expected = "1 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{ {3, 2, 1} };
 
@@ -74,7 +74,7 @@ void test07() {
 // matrix == horizontal vector with one local minimum
 void test08() {
 	int n = 1, m = 3;
-	string expected = "1";
+	string expected = "1 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{ {1, 2, 3} };
 
@@ -84,7 +84,7 @@ void test08() {
 // matrix == horizontal vector with two local minimum
 void test09() {
 	int n = 1, m = 3;
-	string expected = "3 2";
+	string expected = "3 2 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{ { 3, 5, 2} };
 
@@ -94,7 +94,7 @@ void test09() {
 // matrix == horizontal vector with one local minimum
 void test10() {
 	int n = 1, m = 3;
-	string expected = "1";
+	string expected = "1 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{ {2, 1, 3} };
 
@@ -104,7 +104,7 @@ void test10() {
 // matrix == horizontal vector with two local minimum
 void test11() {
 	int n = 1, m = 4;
-	string expected = "1 2";
+	string expected = "1 2 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{ {1, 7, 2, 5} };
 
@@ -114,7 +114,7 @@ void test11() {
 // matrix == vertical vector with one local minimum 
 void test12() {
 	int n = 3, m = 1;
-	string expected = "1";
+	string expected = "1 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{
 		{3},
@@ -128,7 +128,7 @@ void test12() {
 // matrix == vertical vector with one local minimum 
 void test13() {
 	int n = 3, m = 1;
-	string expected = "1";
+	string expected = "1 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{
 		{1},
@@ -142,7 +142,7 @@ void test13() {
 // matrix == vertical vector with two local minimum 
 void test14() {
 	int n = 3, m = 1;
-	string expected = "3 2";
+	string expected = "3 2 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{
 		{3},
@@ -156,7 +156,7 @@ void test14() {
 // matrix == vertical vector with one local minimum 
 void test15() {
 	int n = 3, m = 1;
-	string expected = "1";
+	string expected = "1 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{
 		{3},
@@ -170,7 +170,7 @@ void test15() {
 // matrix == vertical vector with two local minimum 
 void test16() {
 	int n = 4, m = 1;
-	string expected = "-4 1";
+	string expected = "-4 1 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{
 		{-4},
@@ -185,7 +185,7 @@ void test16() {
 // matrix 2x2 with one local minimum
 void test17() {
 	int n = 2, m = 2;
-	string expected = "1";
+	string expected = "1 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{
 		{2, 1},
@@ -198,7 +198,7 @@ void test17() {
 // matrix 2x2 with one local minimum
 void test18() {
 	int n = 2, m = 2;
-	string expected = "1";
+	string expected = "1 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{
 		{1, 2},
@@ -211,7 +211,7 @@ void test18() {
 // matrix 2x2 with one local minimum
 void test19() {
 	int n = 2, m = 2;
-	string expected = "1";
+	string expected = "1 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{
 		{3, 4},
@@ -224,7 +224,7 @@ void test19() {
 // matrix 2x2 with one local minimum
 void test20() {
 	int n = 2, m = 2;
-	string expected = "1";
+	string expected = "1 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{
 		{3, 4},
@@ -237,7 +237,7 @@ void test20() {
 // matrix 2x2 with two local minimum
 void test21() {
 	int n = 2, m = 2;
-	string expected = "1 1";
+	string expected = "1 1 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{
 		{2, 1},
@@ -251,7 +251,7 @@ void test21() {
 void test22() {
 	int n = 2, m = 2;
 
-	string expected = "1 3";
+	string expected = "1 3 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{
 		{1, 5},
@@ -264,7 +264,7 @@ void test22() {
 // matrix 4x4 with one local minimum
 void test23() {
 	int n = 4, m = 4;
-	string expected = "1";
+	string expected = "1 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{
 		{2, 2, 2, 2},
@@ -279,7 +279,7 @@ void test23() {
 // matrix 4x4 with two local minimum
 void test24() {
 	int n = 4, m = 4;
-	string expected = "2 1";
+	string expected = "2 1 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{
 		{7, 7, 7, 7},
@@ -294,7 +294,7 @@ void test24() {
 // matrix 4x4 with two local minimum
 void test25() {
 	int n = 4, m = 4;
-	string expected = "2 5";
+	string expected = "2 5 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{
 		{7, 7, 7, 7},
@@ -309,7 +309,7 @@ void test25() {
 // matrix 4x4 with four local minimum
 void test26() {
 	int n = 4, m = 4;
-	string expected = "2 5 3 4";
+	string expected = "2 5 3 4 ";
 
 	int matrix[DEFAULT_SIZE][DEFAULT_SIZE]{
 		{7, 2, 7, 7},

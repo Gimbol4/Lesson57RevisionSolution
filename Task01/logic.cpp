@@ -11,8 +11,10 @@ double calculate_arithmetical_mean_of_nonzero_elements(int matrix[DEFAULT_SIZE][
 	if (n < 1 || m < 1) {
 		return -1;
 	}
+
 	double mid = 0.0;
 	int k = 0;
+
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j < m; j++)
@@ -23,8 +25,6 @@ double calculate_arithmetical_mean_of_nonzero_elements(int matrix[DEFAULT_SIZE][
 			}
 		}
 	}
-	if (k == 0) {
-		return 0;
-	}
-	return mid / k;
+
+	return k != 0 ? mid / k : 0;
 }
